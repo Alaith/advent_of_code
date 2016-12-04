@@ -9,8 +9,8 @@ class Pad(object):
                [None,None,'D',None,None]]
     
     def __init__(self):
-        self.column = 1
-        self.row = 1
+        self.column = 0
+        self.row = 2
     
     def getlocation(self):
         return Pad._digits[self.row][self.column]

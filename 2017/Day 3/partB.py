@@ -29,10 +29,10 @@ for n in range(1,(h-2)**2):
 		k=d-3*r
 	j=j+m
 	k=k+m
-	print "{} {}".format(j,k)
 	s=sum(map(lambda c: A[(c[0]+j-1,c[1]+k-1)], T))
 	if s > p:
 		print s
 		sys.exit()
 	A[j-1,k-1] = s
+	print "{}:  {}".format(n,s)
 sys.exit(1)
